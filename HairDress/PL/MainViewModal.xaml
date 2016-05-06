@@ -1,0 +1,70 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:fa="http://schemas.fontawesome.io/icons/" x:Class="HairDress.PL.MainViewModal"
+      mc:Ignorable="d"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      Title="Main">
+    <Grid MaxHeight="600" MaxWidth="600" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Users" Margin="2" Grid.Column="0" Grid.Row="0" Style="{DynamicResource GlassButton}" Click="button0_Click" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="User" Foreground="{Binding Foreground, ElementName=Users}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kullanıcılar" Foreground="{Binding Foreground, ElementName=Users}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+        <Button x:Name="b10" Margin="2" Grid.Column="1" Grid.Row="0" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Adjust" Foreground="{Binding Foreground, ElementName=b10}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kuaför Flash" Foreground="{Binding Foreground, ElementName=b10}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+        <Button x:Name="b20" Margin="2" Grid.Column="2" Grid.Row="0" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Dashboard" Foreground="{Binding Foreground, ElementName=b20}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kuaför Flash" Foreground="{Binding Foreground, ElementName=b20}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+
+        <Button x:Name="Logo" Margin="2" Grid.Column="1" Grid.Row="1" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Cut" Foreground="{Binding Foreground, ElementName=Logo}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kuaför Flash" Foreground="{Binding Foreground, ElementName=Logo}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+
+        <Button x:Name="b02" Margin="2" Grid.Column="0" Grid.Row="2" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Key" Foreground="{Binding Foreground, ElementName=b02}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kullanıcılar" Foreground="{Binding Foreground, ElementName=b02}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+        <Button x:Name="b12" Margin="2" Grid.Column="1" Grid.Row="2" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Pagelines" Foreground="{Binding Foreground, ElementName=b12}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kuaför Flash" Foreground="{Binding Foreground, ElementName=b12}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+        <Button x:Name="b22" Margin="2" Grid.Column="2" Grid.Row="2" Style="{DynamicResource GlassButton}" Foreground="#B2E23838" Background="#55FFFFFF">
+            <Grid Margin="3">
+                <fa:ImageAwesome Icon="Gamepad" Foreground="{Binding Foreground, ElementName=b22}" Margin="0,0,0,16"  />
+                <TextBlock Text="Kuaför Flash" Foreground="{Binding Foreground, ElementName=b22}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" />
+            </Grid>
+        </Button>
+
+
+    </Grid>
+</Page>
